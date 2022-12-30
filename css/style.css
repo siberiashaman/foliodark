@@ -28,7 +28,97 @@
 }
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.25rem;
   font-weight: 700;
-  background-color: #DEDEDE;
+  background-color: #202020;
+  color: #DEDEDE;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.header {
+  height: 100vh;
+}
+.header .top-menu {
+  background: rgba(50, 50, 50, 0.7);
+  height: 5rem;
+  font-size: 1.125rem;
+}
+.header .top-menu .navbar-brand {
+  position: relative;
+  font-size: 1.25rem;
+  font-family: "FjallaOne", sans-serif;
+  color: #DEDEDE;
+}
+.header .top-menu .navbar-brand::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  border-top: 1px solid #DEDEDE;
+}
+.header .top-menu .navbar-brand::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  border-bottom: 1px solid #DEDEDE;
+}
+.header .top-menu .navbar-brand:hover {
+  transition: all 2s ease;
+  transform: scale(1.15);
+  transition: 1s;
+  color: #ED413E;
+}
+.header .top-menu .navbar-brand:hover:after {
+  border-top: 1px solid #ED413E;
+}
+.header .top-menu .navbar-brand:hover:before {
+  border-bottom: 1px solid #ED413E;
+}
+.header .top-menu .navbar-nav a {
+  color: #DEDEDE;
+}
+.header .top-menu .navbar-nav a:hover {
+  color: #ED413E;
+  transition: all 1.4s ease;
+  transition: 1s;
+}
+.header .header-body {
+  padding-top: 15vh;
+}
+.header .header-body .greeting-title {
+  font-size: 4rem;
+  line-height: 4.375rem;
+}
+.header .header-body .greeting-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  letter-spacing: -0.5px;
+  color: #959595;
+}
+.header .header-body .featured {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #DEDEDE;
+  cursor: pointer;
+}
+.header .header-body .featured span {
+  font-size: 1.5rem;
+}
+.header .header-body .featured:hover {
+  color: #ED413E;
+  transition: all 1.4s ease;
+  transition: 1s;
+}
+.header .header-body img {
+  border-radius: 50%;
 }

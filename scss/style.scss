@@ -1,7 +1,7 @@
 @import 'font';
 
 // rem converter
-$html-font-size: 15px;
+$html-font-size: 16px;
 
 @function stripUnit($value) {
     @return $value / ($value * 0 + 1);
@@ -15,11 +15,103 @@ $html-font-size: 15px;
 
 $gray: #DEDEDE;
 $black: #202020;
-;
+$red: #ED413E;
 
 body {
     font-family: 'Manrope', sans-serif;
     font-size: rem(36px);
     font-weight: 700;
-    background-color: $gray;
+    background-color: $black;
+    color: $gray;
+}
+a {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+.header {
+    height: 100vh;
+    .top-menu{
+        background: rgba(50, 50, 50, 0.7);
+        height: rem(80px);
+        font-size: rem(18px);
+        .navbar-brand {
+            position: relative;
+            font-size: rem(20px);
+            font-family: 'FjallaOne', sans-serif;
+            color: $gray;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 15%;
+                left: 10%;
+                width: 80%;
+                border-top: 1px solid $gray;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+                width: 80%;
+                border-bottom: 1px solid $gray;
+            }
+            &:hover {
+                transition: all 2.0s ease;
+                transform: scale(1.15);
+                transition: 1s;
+                color: $red;
+                &:after {
+                    border-top: 1px solid $red;
+                }
+                &:before {
+                    border-bottom: 1px solid $red;
+                }
+
+            }
+        }
+        .navbar-nav {
+            a {
+                color: $gray;
+                &:hover {
+                    color: $red;
+                    transition: all 1.4s ease;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+    .header-body {
+        padding-top: 15vh;
+        .greeting-title {
+            font-size: rem(64px);
+            line-height: rem(70px);
+        }
+        .greeting-subtitle {
+            font-size: rem(24px);
+            font-weight: 500;
+            line-height: rem(36px);
+            letter-spacing: -0.5px;
+            color: #959595;
+        }
+        .featured {
+            font-size: rem(16px);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: $gray;
+            cursor: pointer;
+            span {
+                font-size: rem(24px);
+            }
+            &:hover {
+                color: $red;
+                transition: all 1.4s ease;
+                transition: 1s;
+            }
+        }
+        img {
+            border-radius: 50%;
+        }
+    }
 }
