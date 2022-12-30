@@ -122,3 +122,9 @@ a {
 .header .header-body img {
   border-radius: 50%;
 }
+.header .header-body img:hover {
+  filter: brightness(80%);
+  transition: all 1.8s ease;
+  transform: scale(1.05);
+  transition: 1s;
+}

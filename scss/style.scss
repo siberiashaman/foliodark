@@ -112,6 +112,13 @@ a {
         }
         img {
             border-radius: 50%;
+            &:hover {
+                filter: brightness(80%);
+                -webkit-transition: all 1.8s ease;
+                transition: all 1.8s ease;
+                transform: scale(1.05);
+                transition: 1s;
+            }
         }
     }
 }
