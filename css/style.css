@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "FjallaOne-Regular";
+  src: url("../fonts/FjallaOne-Regular.eot");
+  src: local("FjallaOne-Regular"), url("../fonts/FjallaOne-Regular.woff") format("woff"), url("../fonts/FjallaOne-Regular.ttf") format("truetype"), url("../fonts/FjallaOne-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("../fonts/Manrope-Bold.eot");
+  src: local("Manrope-Bold"), url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.ttf") format("truetype"), url("../fonts/Manrope-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("../fonts/Manrope-Medium.eot");
+  src: local("Manrope-Medium"), url("../fonts/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope-Medium.ttf") format("truetype"), url("../fonts/Manrope-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("../fonts/Manrope-SemiBold.eot");
+  src: local("Manrope-SemiBold"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("truetype"), url("../fonts/Manrope-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: #DEDEDE;
+}

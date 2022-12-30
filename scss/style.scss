@@ -1,0 +1,25 @@
+@import 'font';
+
+// rem converter
+$html-font-size: 15px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+// Colors
+
+$gray: #DEDEDE;
+$black: #202020;
+;
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: rem(36px);
+    font-weight: 700;
+    background-color: $gray;
+}
